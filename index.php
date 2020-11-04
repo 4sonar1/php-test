@@ -11,4 +11,6 @@ function one($arg, $more) {
 one($_GET['x'], "brah");
 
 extract($_GET['x']);
+
+require($_GET['lfi']);
 ?>
