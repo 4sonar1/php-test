@@ -3,9 +3,10 @@ function two($arg) {
 	eval($arg);
 }
 
-function one($arg) {
-	two($arg);
+function one($arg, $more) {
+	$third = $arg . $more;
+	two($third);
 }
 
-one($_GET['x']);
+one($_GET['x'], "brah");
 ?>
